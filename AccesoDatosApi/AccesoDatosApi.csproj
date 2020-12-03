@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
@@ -12,9 +12,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AccesoDatos.Entidades\AccesoDatos.Entidades.csproj" />
-    <ProjectReference Include="..\AccesoDatos.Negocio\AccesoDatos.Negocio.csproj" />
-    <ProjectReference Include="..\SodimacBD.NC\SodimacBD.NC.vbproj" />
+    <Folder Include="Dll\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AccesoDatos.Entidades">
+      <HintPath>Dll\AccesoDatos.Entidades.dll</HintPath>
+    </Reference>
+    <Reference Include="AccesoDatos.Log">
+      <HintPath>Dll\AccesoDatos.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="AccesoDatos.Negocio">
+      <HintPath>Dll\AccesoDatos.Negocio.dll</HintPath>
+    </Reference>
+    <Reference Include="SodimacBD.NC">
+      <HintPath>Dll\SodimacBD.NC.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 
